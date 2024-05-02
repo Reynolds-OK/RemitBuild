@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>About us</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="The River template project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
-<link href="plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/about.css">
-<link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
-</head>
+	<head>
+		<?php
+			include_once "helpers/head.php";
+		?>
+		<link rel="stylesheet" type="text/css" href="styles/about.css">
+		<link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+	</head>
 <body>
 
 <div class="super_container">
@@ -28,14 +20,14 @@
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
 				<nav class="main_nav">
 					<ul class="d-flex flex-row align-items-start justify-content-start">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About us</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li class="active"><a href="about.php">About us</a></li>
 						<li><a href="#">RE Agents</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="blog.php">Blog</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</nav>
-				<div class="book_button"><a href="booking.html">Get Home</a></div>
+				<div class="book_button"><a href="booking.php">Get Home</a></div>
 				<!-- <div class="header_phone d-flex flex-row align-items-center justify-content-center">
 					<img src="images/phone.png" alt="">
 					<span>0183-12345678</span>
@@ -55,11 +47,11 @@
 		<div class="menu_content">
 			<nav class="menu_nav text-right">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About us</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about.php">About us</a></li>
 					<li><a href="#">Rooms</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="blog.php">Blog</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -301,72 +293,9 @@
 
 	<!-- Footer -->
 
-	<footer class="footer">
-		<div class="footer_content">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="footer_logo_container text-center">
-							<div class="footer_log">
-								<a href="#"></a>
-								<img src="images/logo1.png" alt="" height="200px">
-								<!-- <div>RemitBuild</div>-->
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row footer_row">
-					
-					<!-- Address -->
-					<div class="col-lg-3">
-						<div class="footer_title">Our Address</div>
-						<div class="footer_list">
-							<ul>
-								<li>1 University Avenue</li>
-								<li>Berekuso, ER</li>
-								<li>Ghana</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Reservations -->
-					<div class="col-lg-3">
-						<div class="footer_title">Reservations</div>
-						<div class="footer_list">
-							<ul>
-								<li>Tel: +233 20 095 2864</li>
-								<li>remitbuild@realestate.com</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Newsletter -->
-					<div class="col-lg-3">
-						<div class="footer_title">Newsletter</div>
-						<div class="newsletter_container">
-							<form action="#" class="newsletter_form" id="newsletter_form">
-								<input type="email" class="newsletter_input" placeholder="Your email address" required="required">
-								<button class="newsletter_button">Subscribe</button>
-							</form>
-						</div>
-					</div>
-
-					<!-- Footer images -->
-					<div class="col-lg-3">
-						<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
-							<div class="cert"><img src="images/cert_1.png" alt=""></div>
-							<div class="cert"><img src="images/cert_2.png" alt=""></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</div>
-	</footer>
+		<?php
+			include_once "helpers/footer.php";
+		?>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
